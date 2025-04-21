@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header-items{
+  display: flex;
+  padding: 1rem;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.header-item{
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.header-item-selected{
+  color: #00ffe7;
+  font-weight: bold;
+}
+
+img{
+  width: 55vh;
+  height: 55vh;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+.phone-display{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0.5rem;
+}
+
+.phone-card{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  
+}
