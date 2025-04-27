@@ -1,6 +1,9 @@
-// import React,{useState} from 'react'
 
-const Header = ({selectedCategory,setSelectedCategory}) => {
+import AddToCart from './AddToCart';
+import React from "react";
+
+
+const Header = ({ selectedCategory,setSelectedCategory,count}) => {
 
   const data=['Budget','MidRange','Premium','My Phone Journey']
   
@@ -20,12 +23,13 @@ const Header = ({selectedCategory,setSelectedCategory}) => {
         ))}
 
           <div className="header-cart">
-            <img
-              style={{width:'1.5rem',height:'1rem'}}
+            <img 
+              style={{width:'2rem',height:'2.2rem'}}
               src='../public/assets/cart.png'
               alt="Cart"
-              className="cart-icon"
-            />
+              className="cart-icon"/>
+            <p className="count">{count > 0 ? count : ""}</p>
+              
           </div>
         </div>
     </>
