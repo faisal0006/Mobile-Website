@@ -15,6 +15,8 @@
   background-color: #1e1e2f;
   color: #ffffff;
   justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
 }
 
 .header-item{
@@ -27,6 +29,19 @@
   font-weight: bold;
 }
 
+.header-cart{
+  display: flex;
+  margin-top: 0.2rem;
+  align-items: baseline;
+  position: relative;
+}
+.count{
+  font-size: 1.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(139%, 4%)
+}
 img{
   width: 55vh;
   height: 55vh;
@@ -47,5 +62,110 @@ img{
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 1rem;
-  
+  text-align: center;
+}
+.phone-name{
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+.phone-price{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+
+button {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0px;
+  border: none;
+  background-color: hsl(255deg 50% 40%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-family: "Inter", sans-serif;
+}
+
+.default-btn {
+  background-image: linear-gradient(
+    90.1deg,
+    rgba(84, 212, 228, 1) 0.2%,
+    rgba(68, 36, 164, 1) 99.9%
+  );
+}
+
+.default-btn,
+.hover-btn {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 1em 3em;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hover-btn {
+  position: absolute;
+  inset: 0;
+  font-size: 16px;
+  padding: 1em 3em;
+  text-align: center;
+  background: rgb(26, 35, 126);
+  background: linear-gradient(
+    63deg,
+    rgba(26, 35, 126, 1) 0%,
+    rgba(69, 39, 160, 1) 100%
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transform: translate(0%, 100%);
+}
+
+.default-btn span {
+  color: hsl(0, 0%, 100%);
+}
+
+.hover-btn span {
+  color: hsl(0, 0%, 100%);
+}
+
+button:hover .default-btn {
+  transform: translate(0%, -100%);
+}
+
+button:hover .hover-btn {
+  transform: translate(0%, 0%);
+}
+
+.add-to-cart-container{
+  display: flex;
+  justify-content: center;
+  gap:12px;
+}
+
+.add-to-cart-container .minus{
+  color: #ffffff;
+  border: 1px solid black;
+  padding: 0.2rem 0.4rem;
+  background: #000;
+}
+
+.add-to-cart-container .plus{
+  color: white;
+  border: 1px solid black;
+  padding: 0.2rem 0.4rem;
+  background: #000;
 }
