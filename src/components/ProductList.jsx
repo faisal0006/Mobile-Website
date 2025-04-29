@@ -1,20 +1,24 @@
-
 import React, { useState } from 'react';
 import Budget from '../budget';
 import MidRange from '../midrange';
 import Premium from '../premium';
 import AddToCart from './AddToCart';
-
+import MyPhoneJourney from '../myphoneData';
+import PhoneJourney from './MyPhone'; 
 const categories = {
   Budget,
   MidRange,
-  Premium
+  Premium,
+  MyPhoneJourney 
 };
 
 const ProductList = ({ selectedCategory, setCount, count }) => {
+  if (selectedCategory === 'MyPhoneJourney') {
+    return <PhoneJourney />;
+  }
+  
   const phones = categories[selectedCategory] || [];
 
-  // Track quantity of each phone (keyed by index or unique ID)
   const [cart, setCart] = useState({});
 
   const handleAdd = (index) => {
