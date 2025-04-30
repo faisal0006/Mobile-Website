@@ -5,17 +5,23 @@ import Premium from '../data/premium';
 import AddToCart from './AddToCart';
 import MyPhoneJourney from '../data/myphoneData';
 import PhoneJourney from './MyPhone';
-import History from './PhoneHistory';
+import PhoneHistory from './PhoneHistory';
+
 const categories = {
   Budget,
   MidRange,
   Premium,
-  MyPhoneJourney 
+  MyPhoneJourney,
+  PhoneHistory
 };
 
 const ProductList = ({ selectedCategory, setCount, count }) => {
   if (selectedCategory === 'MyPhoneJourney') {
     return <PhoneJourney />;
+  }
+
+  if (selectedCategory === 'History') {
+    return <PhoneHistory/>;
   }
   
   const phones = categories[selectedCategory] || [];
