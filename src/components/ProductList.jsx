@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Budget from '../budget';
-import MidRange from '../midrange';
-import Premium from '../premium';
+import Budget from '../data/budget';
+import MidRange from '../data/midrange';
+import Premium from '../data/premium';
 import AddToCart from './AddToCart';
-import MyPhoneJourney from '../myphoneData';
-import PhoneJourney from './MyPhone'; 
+import MyPhoneJourney from '../data/myphoneData';
+import PhoneJourney from './MyPhone';
+import History from './PhoneHistory';
 const categories = {
   Budget,
   MidRange,
