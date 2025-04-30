@@ -1,4 +1,3 @@
-
 import AddToCart from './AddToCart';
 import React from "react";
 
