@@ -24,7 +24,7 @@ const Header = ({ selectedCategory,setSelectedCategory,count}) => {
           <div className="header-cart">
             <img 
               style={{width:'2rem',height:'2.2rem'}}
-              src='../../public/assets/cart.png'
+              src='../assets/cart.png'
               alt="Cart"
               className="cart-icon"/>
             <p className="count">{count > 0 ? count : ""}</p>
