@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Header from './header';
+import Header from './Header';
 const AddToCart = ({phonePrice, quantity, onAdd, onIncrement, onDecrement }) => {
 
   if (quantity === 0) {
