@@ -1,4 +1,4 @@
-const PhoneHistory = [
+const PhoneHistoryData = [
     {
       id: 1,
       year: 1973,
@@ -81,4 +81,4 @@ const PhoneHistory = [
     }
   ];
 
-  export default PhoneHistory;
+  export default PhoneHistoryData;
