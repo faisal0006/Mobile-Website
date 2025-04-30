@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import PhoneHistory from '../data/phoneHistory';
+import PhoneHistoryData from '../data/phoneHistory';
 
 
 const TimelineItem = ({ item, index, containerRef }) => {
@@ -276,7 +276,7 @@ const PhoneHistory = () => {
           <div className="container">
             <div className="timeline-line"></div>
             
-            {phoneHistory.map((item, index) => (
+            {PhoneHistoryData.map((item, index) => (
               <TimelineItem
                 key={item.id}
                 item={item}
