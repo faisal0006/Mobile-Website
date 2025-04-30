@@ -5,7 +5,7 @@ import React from "react";
 
 const Header = ({ selectedCategory,setSelectedCategory,count}) => {
 
-  const data=['MyPhoneJourney','Budget','MidRange','Premium',]
+  const data=['MyPhoneJourney','History','Budget','MidRange','Premium']
   
 
   return (
