@@ -1,5 +1,6 @@
 import AddToCart from './AddToCart';
 import React from "react";
+import cartIcon from '../assets/cart.png';
 
 
 const Header = ({ selectedCategory,setSelectedCategory,count}) => {
@@ -24,7 +25,7 @@ const Header = ({ selectedCategory,setSelectedCategory,count}) => {
           <div className="header-cart">
             <img 
               style={{width:'2rem',height:'2.2rem'}}
-              src='../assets/cart.png'
+              src={cartIcon}
               alt="Cart"
               className="cart-icon"/>
             <p className="count">{count > 0 ? count : ""}</p>
