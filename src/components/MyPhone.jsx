@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion , useScroll, useTransform } from 'framer-motion'
-import MyPhoneJourney from '../myphoneData'
+import MyPhoneJourney from '../data/myphoneData'
 import '../styles/myphone.css'
 
 const PhoneJourney = () => {
