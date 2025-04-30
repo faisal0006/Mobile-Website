@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import phoneHistory from '../data/phoneHistory';
+import PhoneHistory from '../data/phoneHistory';
 
 
 const TimelineItem = ({ item, index, containerRef }) => {
