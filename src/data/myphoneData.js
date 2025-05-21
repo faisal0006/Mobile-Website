@@ -16,7 +16,7 @@ const MyPhoneJourney = [
   {
     year: "2022",
     name: "Iphone 12",
-    img: "https://vlemart.in/wp-content/uploads/2024/01/apple-iphone-12-white-256-gb.jpg",
+    img: "https://systematixmedia.com/storage/product_varient/large/MGJ63HN-A_1_20201015035627.png",
     price: "50,000",
     dis:"The iPhone 12 is my current smartphone, and I originally bought it mainly for playing BGMI. Even after 3+ years of use, it continues to perform exceptionally well, and I’m still very happy using it. The camera—especially for video—is impressive, the UI is clean and smooth, and its 5G support adds to the overall experience. What's more, the design has aged gracefully and still looks modern today, closely resembling the look of the recently launched iPhone 16."
   }
